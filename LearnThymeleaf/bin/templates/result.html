@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Getting Started: Handling Form Submission</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Result</h1>
+	<div>
+		<p th:text="'Title: ' + ${store.title.title}" />
+		<p th:text="'Link Video: ' + ${store.title.linkVideo}" />
+		<p th:text="'nameChannel: ' + ${store.title.nameChannel}" />
+		<p th:text="'View Count: ' + ${store.details.viewCount}" />
+		<p th:text="'Image thumbnail: ' + ${store.thumbnailDetails.imageSizeMin}" />
+		
+			<a href="/store">Submit another message</a>
+	</div>
+</body>
+</html>
